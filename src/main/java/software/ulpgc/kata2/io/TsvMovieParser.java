@@ -10,7 +10,7 @@ public class TsvMovieParser implements MovieParser{
         return s.split("\\t");
     }
 
-    private Movie toMovie(String line) {
+    public Movie toMovie(String line) {
         String[] splits = parse(line);
         // 1,5,7
         return new Movie(

@@ -12,9 +12,8 @@ public class TsvMovieParser implements MovieParser{
 
     public Movie toMovie(String line) {
         String[] splits = parse(line);
-        // 1,5,7
         return new Movie(
-                splits[1],
+                splits[2],
                 toInt(splits[5]),
                 toInt(splits[7])
         );
